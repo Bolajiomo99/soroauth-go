@@ -110,6 +110,12 @@
         },
         "explain a failure in the job summary": {
           "bookkeeping": "writes a job summary when the scan above fails"
+        },
+        "upload SARIF to code scanning": {
+          "skip": "Code scanning SARIF upload only exists on GitHub-hosted runners"
+        },
+        "report SARIF upload failure": {
+          "bookkeeping": "writes a job summary when SARIF upload fails"
         }
       }
     },
