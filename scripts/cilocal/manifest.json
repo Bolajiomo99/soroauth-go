@@ -159,115 +159,29 @@
         }
       }
     },
-    "ci-go.yml/cross-compile": {
-      "requires": [
-        "go"
-      ]
-    },
-    "ci-go.yml/fuzz": {
-      "requires": [
-        "go"
-      ]
-    },
-    "ci-go.yml/bench": {
-      "requires": [
-        "go"
-      ]
-    },
-    "ci-parity.yml/js-drift": {
-      "requires": [
-        "node",
-        "npm",
-        "git"
-      ]
-    },
-    "ci-parity.yml/python-parity": {
-      "requires": [
-        "python3"
-      ],
-      "os": [
-        "linux",
-        "darwin"
-      ]
-    },
-    "ci-parity.yml/rust-parity": {
-      "requires": [
-        "cargo"
-      ]
-    },
-    "ci-parity.yml/differential": {
-      "requires": [
-        "go",
-        "node",
-        "npm",
-        "python3",
-        "git"
-      ],
-      "os": [
-        "linux",
-        "darwin"
-      ]
-    },
-    "ci-wasm.yml/wasm": {
-      "requires": [
-        "go",
-        "node",
-        "npm"
-      ],
-      "os": [
-        "linux",
-        "darwin"
-      ]
-    },
-    "ci-adapters.yml/adapter": {
-      "requires": [
-        "go"
-      ]
-    },
-    "ci-adapters.yml/gcpkms": {
-      "requires": [
-        "go"
-      ]
-    },
-    "ci-adapters.yml/awskms": {
-      "requires": [
-        "go"
-      ]
-    },
-    "ci-rust.yml/rust": {
-      "requires": [
-        "cargo"
-      ]
-    },
-    "ci-jvm.yml/jvm": {
-      "requires": [
-        "go",
-        "mvn",
-        "java",
-        "gcc"
-      ],
-      "os": [
-        "linux",
-        "darwin"
-      ]
-    },
-    "ci-node.yml/node": {
-      "requires": [
-        "node",
-        "npm"
-      ]
-    },
-    "ci-browser-offline.yml/offline": {
-      "skip": "needs a Chromium install with root-level system libraries and a CDP virtual authenticator, which this runner does not provision"
-    },
-    "ci-deploy.yml/helm": {
-      "requires": [
-        "go",
-        "helm",
-        "docker",
-        "kubectl"
-      ]
-    },
+    "ci-go.yml/cross-compile": { "requires": ["go"] },
+    "ci-go.yml/fuzz": { "requires": ["go"] },
+    "ci-go.yml/bench": { "requires": ["go"] },
+
+    "ci-parity.yml/js-drift": { "requires": ["node", "npm", "git"] },
+    "ci-parity.yml/python-parity": { "requires": ["python3"], "os": ["linux", "darwin"] },
+    "ci-parity.yml/rust-parity": { "requires": ["cargo"] },
+    "ci-parity.yml/differential": { "requires": ["go", "node", "npm", "python3", "git"], "os": ["linux", "darwin"] },
+
+    "ci-wasm.yml/wasm": { "requires": ["go", "node", "npm"], "os": ["linux", "darwin"] },
+
+    "ci-adapters.yml/adapter": { "requires": ["go"] },
+    "ci-adapters.yml/gcpkms": { "requires": ["go"] },
+    "ci-adapters.yml/awskms": { "requires": ["go"] },
+
+    "ci-rust.yml/rust": { "requires": ["cargo"] },
+    "ci-rust.yml/host-probe": { "requires": ["cargo"] },
+    "ci-jvm.yml/jvm": { "requires": ["go", "mvn", "java", "gcc"], "os": ["linux", "darwin"] },
+    "ci-node.yml/node": { "requires": ["node", "npm"] },
+
+    "ci-browser-offline.yml/offline": { "skip": "needs a Chromium install with root-level system libraries and a CDP virtual authenticator, which this runner does not provision" },
+
+    "ci-deploy.yml/helm": { "requires": ["go", "helm", "docker", "kubectl"] },
     "ci-deploy.yml/smoke": {
       "requires": [
         "go",
